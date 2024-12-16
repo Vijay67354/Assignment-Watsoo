@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+
+    <!-- Font-Family icon cdn -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <!-- End of the section -->
+
+    <!-- Font-Awesome icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- End of the section -->
+
+    <!-- Bootstrap 5 cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- Bootstrap 5 cdn -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slidercustom.css">
+
+    <!-- Slick Slider cdn -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Slick Slider cdn -->
+
+
+    <!-- Animate Css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Animate Css cdn -->
+
+    <style>
+
+    </style>
+
+<body>
+    <!--Navbar Section-->
+    <navbar class="navbar">
+        <div class="logo">
+            <img src="/images/watsoo.jpg" />
+        </div>
+        <div class="nav">
+            <i class="fa-regular fa-circle-xmark" id="close-nav"></i>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li>
+                    <a href="#" onclick="toggleDropdown(event)">
+                        Service <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                    </a>
+                    <div class="dropdown-content" id="service-dropdown">
+                        <a href="#">Inventive IoT</a>
+                        <a href="#">Industries Set</a>
+                    </div>
+                </li>
+                <li><a href="#">Iot Device</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Industries</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <div>
+            <button class="button">
+                Contact Us
+                <img src="/logo/right-up.png" class="logoright head" />
+            </button>
+        </div>
+
+        <button class="navbar-toggler" onclick="toggleMenu()">&#9776;</button>
+    </navbar>
+    <!--Navbar End Section-->
+
+
+    <!--Banner Section-->
+
+    <div class="background-image">
+        <div class="centered-text animate__animated animate__fadeInDown"> AUTOMATE YOUR SERVICES</div>
+    </div>
+    <!--Banner End Section-->
+
+
+    <!--Logo Section-->
+    <div class="logoSection">
+        <div>
+            <img src="/logo/fleetx-software.png" class="logoicon" />
+        </div>
+        <div>
+            <img src="/logo/logonav.png" class="logoicon" />
+        </div>
+        <div>
+            <img src="/logo/ncubate-logo.png" class="logoicon" />
+        </div>
+        <div>
+            <img src="/logo/sbi.png" class="logoicon" />
+        </div>
+        <div>
+            <img src="/logo/wheeleye.png" class="logoicon" />
+        </div>
+        <div>
+            <img src="/logo/Agastya.png" class="logoicon" />
+        </div>
+        <div>
+            <img src="/logo/blackbuck-logo.png" class="logoicon" />
+        </div>
+    </div>
+
+    <!--Logo End Section-->
+
+
+    <!--About Watsoo Section-->
+    <div class="about-watsoo-section mt-4 mb-4">
+        <div class="row justify-content-center ">
+
+            <!-- First Column (Content) -->
+            <div class="col-12 col-md-6 col-lg-4 mt-3">
+                <div class="Aboutwatsoo ">
+                    <div>
+                        <input min="1" max="100" type="range" class="sliderranger" style="background-color: blue;" />
+                    </div>
+                    <div class="aboutwastooparagraph">
+                        <p class="aboutwatsoosectionparagraph animate__bounceIn">About Watsoo</p>
+                    </div>
+                </div>
+                <h2 class="aboutwatsoosectionparagraphinventive animate__animated animate__fadeInLeft">Inventive IoT,
+                    Telematics, and Fintech Solutions</h2>
+                <div class="inventive">
+                    <div>
+                        <img src="/logo/previewarrow.png" class="rightlogo" />
+                    </div>
+                    <div class="about-watsoo-section-innovative animate__animated animate__fadeInLeft">
+                        <p class="about-watsoo-section-innovativeinnovative">
+                            Innovative advancements in IoT, telematics, and fintech are reshaping industries by
+                            connecting devices, optimizing operations, and transforming financial transactions. IoT
+                            solutions enable seamless communication between devices, driving smarter homes, efficient
+                            industries, and intelligent cities.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Counter Section -->
+                <div class="counter-container">
+                    <div class="counter">
+                        <div id="counter1" class="value">0</div>
+                        <span>Expert teams</span>
+                    </div>
+                    <div class="counter">
+                        <div id="counter2" class="value">0</div>
+                        <span>Projects done</span>
+                    </div>
+                    <div class="counter">
+                        <div id="counter3" class="value">0</div>
+                        <span>Success Rate</span>
+                    </div>
+                </div>
+
+                <!-- "More About Us" Button -->
+                <div>
+                    <button class="buttoncontact mt-4">
+                        More About Us
+                        <img src="/logo/right-up.png" class="logoright" alt="Arrow Icon" />
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- Second Column (Image) -->
+            <!-- First Image Column -->
+            <div class="col-12 col-md-6 col-lg-4 text-center building">
+                <img src="/images/about-watsoo-section1.jpg" class="img-fluid" alt="Modern Business Building" />
+            </div>
+
+            <!-- Third and Fourth Columns -->
+            <div class="col-6 col-md-6 col-lg-1 text-center">
+                <img src="/images/about-watsoo-section2.jpg" class="img-fluid" alt="Modern Business Building" />
+            </div>
+            <div class="col-6 col-md-6 col-lg-1 text-center">
+                <img src="/images/about-watsoo-section3.jpg" class="img-fluid" alt="Modern Business Building" />
+            </div>
+
+
+
+        </div>
+    </div>
+    <!--About End Watsoo Section-->
+
+
+    <!--Explore-Out-IoT-Device-->
+
+    <div class="explore-out-iot-deive pt-4 pb-4">
+        <div class="containersexplore">
+            <div class="explore-out-iot-device animate__animated animate__fadeInLeft"
+                style=" text-align: left; margin-left: 10px;">
+                <div class="Aboutwatsoo ">
+                    <div>
+                        <input min="1" max="100" type="range" class="sliderranger" style="background-color: blue;" />
+                    </div>
+                    <div class="aboutwastooparagraph">
+                        <p class="aboutwatsoosectionparagraph">IoT Device</p>
+                    </div>
+                </div>
+                <h2 class="aboutwatsoosectionparagraphinventive">Explore Our IoT Service</h2>
+                <p class="about-watsoo-section-innovative">Guard your fleets by integrating SOS, panic button</p>
+            </div>
+            <div class="logo-slider">
+                <div class="imaglog">
+                    <img src="/logo/panic.png" alt="Panic Button Logo" class="paniclogobtnlogo" />
+                    <h5 class="mt-2">Panic Button</h5>
+                    <p>Guard your fleets integrating SOS, panic button and emergency system and movements of objects.
+                    </p>
+                    <a class="learnmore">Learn More</a>
+                </div>
+                <div class="imaglog">
+                    <img src="/logo/watsoo-prithvi-ais-140-advanced-gps-tracking-system.png" class="paniclogo" />
+                    <h5 class="mt-4">Gps-Tracking-System</h5>
+                    <p>A GPS tracking system is a technology solution for that uses for a satellite signals to monitor.
+                    </p>
+                    <a class="learnmore">Learn More</a>
+                </div>
+                <div class="imaglog">
+                    <img src="/logo/custom.png" class="paniclogo" />
+                    <h5 class="mt-4">Custom Gps Tracker</h5>
+                    <p>A custom GPS tracker is a tailored device designed to provide real-time location.</p>
+                    <a class="learnmore">Learn More</a>
+                </div>
+                <div class="imaglog">
+                    <img src="/logo/fuel-gauge-round-white-gauge.png" class="paniclogofuel" />
+                    <h5 class="mt-2">Fuel Gauge</h5>
+                    <p>A fuel gauge is a device measures amount of fuel tank.</p>
+                    <a class="learnmore">Learn More</a>
+                </div>
+
+                <div class="imaglog">
+                    <img src="/logo/panic.png" class="paniclogobtnlogo" alt="Panic Button Logo" />
+                    <h5 class="mt-2">Panic Button</h5>
+                    <p>Guard your fleets integrating SOS, panic button and emergency system and movements of objects.
+                    </p>
+                    <a class="learnmore">Learn More</a>
+                </div>
+                <div class="imaglog">
+                    <img src="/logo/watsoo-prithvi-ais-140-advanced-gps-tracking-system.png" class="paniclogo" />
+                    <h5 class="mt-4">Gps-Tracking-System</h5>
+                    <p>A GPS tracking system is a technology solution that uses for a satellite signals to monitor.</p>
+                    <a class="learnmore">Learn More</a>
+                </div>
+                <div class="imaglog">
+                    <img src="/logo/custom.png" class="paniclogo" />
+                    <h5 class="mt-4">Custom Gps Tracker</h5>
+                    <p>A custom GPS tracker is a tailored device designed to provide real-time location.</p>
+                    <a class="learnmore">Learn More</a>
+                </div>
+                <div class="imaglog">
+                    <img src="/logo/fuel-gauge-round-white-gauge.png" class="paniclogofuel" />
+                    <h5 class="mt-2">Fuel Gauge</h5>
+                    <p>A fuel gauge is a device measures amount of fuel tank.</p>
+                    <a class="learnmore">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Explore-Out-IoT-Device-->
+
+
+    <!--Financial Technologies-->
+    <div class="fintechsolution pt-2 pb-4">
+        <div class="containers">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6 ">
+                    <div class="Aboutwatsoo ">
+                        <div>
+                            <input min="1" max="100" type="range" class="sliderrangerfinancial"
+                                style="background-color: blue;" />
+                        </div>
+                        <div class="aboutwastooparagraph">
+                            <p class="financial-technologiesbest">Best Fintech Solution</p>
+                        </div>
+                    </div>
+
+                    <h2 class="aboutwatsoosectionparagraphinventive" style="color: white;">Leading the Future of
+                        Connected And Financial Technologies
+                    </h2>
+                    <br />
+                    <p class="about-watsoo-section-innovative" style="color: white;">Leading the future of connected and
+                        financial technologies, we innovate to enhance seamless integration and empower businesses with
+                        cutting-edge solutions</p>
+                    <div class="basedsolution">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-wifi"></i>
+                        </div>
+                        <div>
+                            <h2 class="fintechsolutiontechnplogies">Blockchain-Chain based Solutions</h2>
+                            <p class="fintechsolutiontech">Blockchain-based solutions revolutionize security,
+                                transparency, and efficiency, offering decentralized and immutable systems for a wide
+                                range of industries.</p>
+                        </div>
+                    </div>
+                    <div class="basedsolution">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div>
+                            <h2 class="fintechsolutiontechnplogies">CDBC Solutions</h2>
+                            <p class="fintechsolutiontech">CDBC solutions offer secure, digital currencies backed by
+                                central banks for efficient transactions.</p>
+                        </div>
+                    </div>
+                    <button class="buttoncontact mt-4" style="background-color: rgb(5, 5, 153);">
+                        Explore It Solution
+                        <img src="/logo/right-up.png" class="logoright" />
+
+                    </button>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <img src="/images/ulodAsmvr.jpg" class="responsive-image" alt="Image">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--Financial Technologies-->
+
+    <!--TelematicsSolution-->
+    <div class="TelematicsSolution pt-4 pb-4">
+        <div class="Aboutwatsoo ">
+            <div>
+                <input min="1" max="100" type="range" class="sliderranger" style="background-color: blue;" />
+            </div>
+            <div class="aboutwastooparagraph">
+                <p class="aboutwatsoosectionparagraph">IoT Device</p>
+            </div>
+        </div>
+        <h2 class="aboutwatsoosectionparagraphinventive" style="color: black;">Explore Our Telematics Solution</h2>
+        <p class="about-watsoo-section-innovative" style="color: black;">Explore our innovative Telematics Solutions
+            designed to revolutionize fleet management, improve operational efficiency, and enhance vehicle tracking
+            capabilities.</p>
+        <div class="containers">
+            <div class="row">
+                <div class="col-sm-6 col-12 col-md-6 col-lg-4 pt-3">
+                    <div class="image-container">
+                        <img src="/images/telematicssolution.jpg" class="img-fluid-telematic-Solution"
+                            alt="Modern Business Building" />
+                        <div class="text-overlay">
+                            <h2 class="fintechsolutiontechnplogiestelematics">HighWay tell Management</h2>
+                            <hr class="highwatborder">
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-12 col-md-6 col-lg-4 pt-3">
+                    <div class="image-container">
+                        <img src="/images/trafffic-management-system.jpg" class="img-fluid-telematic-Solution"
+                            alt="Modern Business Building" />
+                        <div class="text-overlay">
+                            <h2 class="fintechsolutiontechnplogiestelematics">Traffic Management System</h2>
+                            <hr class="highwatborder">
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-12 col-md-6 col-lg-4 pt-3">
+                    <div class="image-container">
+                        <img src="/images/traffic-management.jpg" class="img-fluid-telematic-Solution"
+                            alt="Modern Business Building" />
+                        <div class="text-overlay">
+                            <h2 class="fintechsolutiontechnplogiestelematics">Vehicle Management System</h2>
+                            <hr class="highwatborder">
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 pt-3">
+                    <div class="image-container">
+                        <img src="/images/fuel-lube-distribution.jpg" class="img-fluid-telematic-Solution"
+                            alt="Modern Business Building" />
+                        <div class="text-overlay">
+                            <h2 class="fintechsolutiontechnplogiestelematics">Fuel Monitoring System</h2>
+                            <hr class="highwatborder">
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 pt-3">
+                    <div class="image-container">
+                        <img src="/images/weight-bridge.jpg" class="img-fluid-telematic-Solution"
+                            alt="Modern Business Building" />
+                        <div class="text-overlay">
+                            <h2 class="fintechsolutiontechnplogiestelematics">Weight Bridge Automation</h2>
+                            <hr class="highwatborder">
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 pt-3">
+                    <div class="image-container">
+                        <img src="/images/fleet-management.jpg" class="img-fluid-telematic-Solution"
+                            alt="Modern Business Building" />
+                        <div class="text-overlay">
+                            <h2 class="fintechsolutiontechnplogiestelematics">Fleet Management System</h2>
+                            <hr class="highwatborder">
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--TelematicsSolution End Section-->
+
+    <!--Fintechsolution Start-->
+    <div class="fintechsolution">
+        <div class="containersfintechsolution ">
+            <div class="row ">
+                <div class="col-12 col-md-6 col-lg-7 Empoweringsolutionmain">
+                    <div class="Aboutwatsoo ">
+                        <div>
+                            <input min="1" max="100" type="range" class="sliderrangerfinancial" />
+                        </div>
+                        <div class="aboutwastooparagraph">
+                            <p class="financial-technologiesbest">Best Fintech Solution</p>
+                        </div>
+                    </div>
+                    <h2 class="houseiotmanufacturing mt-2">Driving innovation with in-house R&D and cutting-edge IoT
+                        solutions, enhancing efficiency, fostering growth, and revolutionizing industries.
+                    </h2>
+                    <br />
+                    <div class="Empoweringsolutiontailored mb-4 mt-4">
+                        <div>
+                            <button class="empowering">Tailored Solution</button>
+                        </div>
+                        <div>
+                            <button class="empowering">Ready Made-IoT</button>
+                        </div>
+                        <div>
+                            <button class="empowering">Whit Label-IoT</button>
+                        </div>
+
+                    </div>
+
+                    <div class="Empoweringsolution">
+                        <div>
+                            <button class="empowering">Complaint IoT</button>
+                        </div>
+                        <div>
+                            <button class="empowering">99% Uptime</button>
+                        </div>
+                        <div>
+                            <button class="empowering">Minimial Health</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-5 mt-4">
+                    <img src="/images/offer-robote.jpg" class="responsive-imagerobot" alt="Image">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--Fintechsolution End-->
+
+    <!--Lab facility Start-->
+    <div class="TelematicsSolution pt-4 pb-4">
+        <div class="Aboutwatsoo ">
+            <div>
+                <input min="1" max="100" type="range" class="sliderranger" />
+            </div>
+            <div class="aboutwastooparagraph">
+                <p class="aboutwatsoosectionparagraph">IoT Device</p>
+            </div>
+        </div>
+        <h2 class="aboutwatsoosectionparagraphinventive">Our IoT Facility</h2>
+        <p class="about-watsoo-section-innovative font" style="color: black;">Our IoT facility provides cutting-edge
+            solutions designed to connect, monitor, and optimize devices and systems across various industries, enabling
+            real-time data insights and enhanced operational efficiency</p>
+        <div class="" style="overflow-x: hidden;">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 pt-3">
+                    <div class="image-container">
+                        <img src="/images/portrait-female-factory-worker-standing-production.jpg" class="img-facility"
+                            alt="Modern Business Building" />
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 pt-3">
+                    <div class="image-container">
+                        <img src="/images/mechanic.jpg" class="img-facility" alt="Modern Business Building" />
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 pt-3">
+                    <div class="image-container">
+                        <img src="/images/mechanic3.jpg" class="img-facility" alt="Modern Business Building" />
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 pt-3">
+                    <div class="image-container">
+                        <img src="/images/smiling-industrial-manufacturing-factory-worker-happy-man-has-smile-his-face-wearing-safety-glasses.jpeg"
+                            class="img-facility" alt="Modern Business Building" />
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--Lab facility End-->
+
+    <!--Contact Us Form Start-->
+    <div class="contactusform pt-4 pb-5">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-6 ">
+                <div class="Aboutwatsoo ">
+                    <div>
+                        <input min="1" max="100" type="range" class="sliderranger" />
+                    </div>
+                    <div class="aboutwastooparagraph">
+                        <p class="aboutwatsoosectionparagraph">IoT Device</p>
+                    </div>
+                </div>
+                <h2 class="aboutwatsoosectionparagraphinventive" style="color: black;">Ready to get Started? <br /> Drop
+                    us a line</h2>
+
+                <div class="contactusicon" style="">
+                    <div class="icon-circle">
+
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <h4 class="address">Address</h4>
+                        <p class="ready">1234 Maple Street
+                            Apt 5B
+                            Springfield, IL 62704
+                            USA</p>
+                    </div>
+                </div>
+                <div class="contactusicon">
+                    <div class="icon-circle">
+
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div>
+                        <h4 class="address">Service & Support</h4>
+                        <p class="ready">+91 9750434567 </p>
+                    </div>
+                </div>
+                <div class="contactusicon">
+                    <div class="icon-circle">
+
+                        <i class="fa-solid fa-message"></i>
+                    </div>
+                    <div>
+                        <h4 class="address">Email Us Today</h4>
+                        <p class="ready">Ready to get Started? Drop us a line</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 pt-3 Request ">
+                <h2 class="quote">Request A Quote</h2>
+                <form class="formquote mt-4">
+                    <div>
+                        <input type="text" placeholder="Name" class="inputform" />
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Number" class="inputform" />
+                    </div>
+                </form>
+
+                <form class="formquote mt-3">
+                    <div>
+                        <input type="text" placeholder="Email" class="inputform" />
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Phone" class="inputform" />
+                    </div>
+                </form>
+                <div class="message">
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        class="textarea-responsive"></textarea>
+
+                </div>
+
+                <div>
+                    <button class="buttoncontactsubmit mt-4 mb-4"> <!-- Used Bootstrap margin utility -->
+                        Submit Now
+                        <img src="/logo/right-up.png" class="logoright" />
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Contact Us Form End-->
+
+    <!--Discoverour Customized Start-->
+    <div class="discoverourcustomized pt-3 pb-3">
+        <div class="containers discover">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <h2 class="aboutwatsoosectionparagraphinventive" style="color: white;">Discover Your Customized</h2>
+                    <h3 class="aboutwatsoosectionparagraphinventive" style="color: white;">Business Solution Certified
+                        By</h3>
+                    <p class="about-watsoo-section-innovative" style="color: white; ">Unlock tailored solutions that
+                        perfectly fit your needs. Whether you're seeking innovative IoT, telematics, or fintech
+                        technologies, we provide customized services designed to optimize efficiency.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="requestademoain">
+                        <div>
+                            <button class="requestademo">
+                                Request a demo <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="requestademo">Explore Solution <i
+                                    class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="discovericon" style="display: flex; gap: 30px;">
+                        <div class="innovationicon">
+                            <img src="/logo/innovation.png" alt="Innovation Logo">
+                        </div>
+                        <div class="innovationicon">
+                            <img src="/logo/building.png" alt="Building Logo">
+                        </div>
+                        <div class="innovationicon">
+                            <img src="/logo/constuction.png" alt="Construction Logo">
+                        </div>
+                        <div class="innovationicon">
+                            <img src="/logo/certified.png" alt="Certified Logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Discoverour Customized End-->
+
+    <!--Contact Us Zoom-->
+
+    <div class="containerszoomin">
+
+        <div class="containers">
+            <div class="Aboutwatsoo ">
+                <div>
+                    <input min="1" max="100" type="range" class="sliderranger"  />
+                </div>
+                <div class="aboutwastooparagraph">
+                    <p class="aboutwatsoosectionparagraph">Industries</p>
+                </div>
+            </div>
+
+            <h2 class="aboutwatsoosectionparagraphinventive" style="color: black; ">Industries We Serve </h2>
+            <p>Guard your fleets by integrating SOS, panic button, and emergency alert systems.</p>
+        </div>
+        <div class="row ">
+            <div class="col-12 col-md-6 col-lg-4 img-wrapper">
+                <div class="zoombusinesssolution">
+                    <img src="/images/large-quantity-dumpsite.jpg" class="inner-img" alt="Panic Button Logo" />
+                    <div class="text-overlay-containerszoominsolution">
+                        <h3 class="business-solution">Business Solution Certified By</h3>
+                        <hr />
+                        <p class="imagehidezoom">Guard your fleets by integrating SOS, panic button, and emergency alert
+                            systems.</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class=" col-12 col-md-6 col-lg-4 img-wrapper">
+                <div class="zoombusinesssolution">
+                    <img src="/images/dumper-coal-mining-coal-gigantic-proportions.jpg" class="inner-img"
+                        alt="Panic Button Logo" />
+                    <div class="text-overlay-containerszoominsolution">
+                        <h3 class="business-solution">Underground Mining Technologies</h3>
+                        <hr />
+                        <p class="imagehidezoom"> A highly efficient underground mining technique where a long
+                            horizontal slice of coal is extracted, often using a continuous miner.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-md-0 col-lg-4 heavyindustries img-wrapper">
+                <div class="zoombusinesssolution">
+                    <img src="/images/Heavy_industry_solutions.jpg" class="inner-imgsolution " alt="Panic Button Logo" />
+                    <div class="text-overlay-containerszoominsolution">
+                        <h3 class="business-solution">Heavy Industry Solutions</h3>
+                        <hr />
+                        <p class="imagehidezoom">Heavy industry plays a crucial role in the global economy, driving the
+                            production of large-scale products and infrastructure. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Contact Us Zoom End Section-->
+
+    <!--Blog Maincontainer Section-->
+    <div class="maincontainer">
+        <div class="containersexplore">
+            <div style="text-align: center; ">
+                <h2 class="aboutwatsoosectionparagraphinventive">Blog Section</h2>
+                <p class="aboutwatsoosectionparagraph" style="color: #111;">Discover Key trends innovation of it
+                    industry</p>
+            </div>
+            <div class="logo-slidercard">
+                <div class="card-body" style="position: relative;">
+                    <img src="./images/watsoo.jpg" class="logo-overlay" alt="Logo" />
+                    <img src="/images/load-censor-solution.jpg" class="card-img-top-industry" alt="...">
+                    <div class="iotdevice">
+                        <h5 class="card-title">Load Sensor Solutions</h5>
+                        <p class="card-text">Experience precision and reliability with our advanced load sensor
+                            technology. Designed to measure and monitor weight accurately, our sensors are ideal. </p>
+                    </div>
+                </div>
+                <div class="card-body" style="position: relative;">
+                    <img src="./images/watsoo.jpg" class="logo-overlay" alt="Logo" />
+                    <img src="/images/bus-tracking-system.jpg" class="card-img-top-industry" alt="...">
+                    <div class="iotdevice">
+                        <h5 class="card-title">
+                            Vehicle Tracking System</h5>
+                        <p class="card-text">Monitor and manage your fleet with precision using our advanced vehicle
+                            tracking system. Designed to provide real-time location updates.</p>
+                    </div>
+                </div>
+                <div class="card-body" style="position: relative;">
+                    <img src="./images/watsoo.jpg" class="logo-overlay" alt="Logo" />
+                    <img src="/images/iot-devicemachine.jpg" class="card-img-top-industry" alt="...">
+                    <div class="iotdevice">
+                        <h5 class="card-title">
+                            IoT Device</h5>
+                        <p class="card-text">Empowering connectivity through smart IoT devices designed to streamline
+                            operations, gather real-time data, and enhance decision-making.</p>
+                    </div>
+                </div>
+                <div class="card-body" style="position: relative;">
+                    <img src="./images/watsoo.jpg" class="logo-overlay" alt="Logo" />
+                    <img src="/images/load-censor-solution.jpg" class="card-img-top" alt="...">
+                    <div class="iotdevice">
+                        <h5 class="card-title">Load Sensor Solutions</h5>
+                        <p class="card-text">Experience precision and reliability with our advanced load sensor
+                            technology. Designed to measure and monitor weight accurately, our sensors are ideal. </p>
+                    </div>
+                </div>
+                <div class="card-body" style="position: relative;">
+                    <img src="./images/watsoo.jpg" class="logo-overlay" alt="Logo" />
+                    <img src="/images/bus-tracking-system.jpg" class="card-img-top" alt="...">
+                    <div class="iotdevice">
+                        <h5 class="card-title">
+                            Vehicle Tracking System</h5>
+                        <p class="card-text">Monitor and manage your fleet with precision using our advanced vehicle
+                            tracking system. Designed to provide real-time location updates.</p>
+                    </div>
+                </div>
+                <div class="card-body" style="position: relative;">
+                    <img src="./images/watsoo.jpg" class="logo-overlay" alt="Logo" />
+                    <img src="/images/iot-devicemachine.jpg" class="card-img-top" alt="...">
+                    <div class="iotdevice">
+                        <h5 class="card-title">
+                            IoT Device</h5>
+                        <p class="card-text">Empowering connectivity through smart IoT devices designed to streamline
+                            operations, gather real-time data, and enhance decision-making.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-navigation">
+                <button class="prev-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                <button class="next-btn"><i class="fa-solid fa-arrow-left"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!--Blog Maincontainer End Section-->
+
+    <!--Subscribe Newsletter Start Section-->
+    <div class="subscribenewsletter pt-3 pb-3">
+        <div class="containers" style="display: flex; flex-wrap: wrap;">
+
+            <div class="col-12 col-md-3 col-lg-4">
+                <p class="newletter" style="color: white;">Join Our News Letter</p>
+                <h3 class="aboutwatsoosectionparagraphinventiveletter"
+                    style="font-size:30px;  font-weight: 500; color: white;">Subsribe NewsLetter</h3>
+            </div>
+
+            <div class="col-12 col-md-9 col-lg-5">
+                <input type="text" placeholder="enter your email address" class="subsribeleeter" />
+            </div>
+
+            <div class="col-12  col-lg-3 mt-2">
+                <button class="subsribebutton ">
+                    Submit Now
+                    <img src="/logo/right-up.png" class="logoright" />
+                </button>
+            </div>
+        </div>
+    </div>
+    <!--Subscribe Newsletter End Section-->
+
+    <!--Footer Start Section-->
+    <div class="footer">
+        <div class="containerfootersection">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="/images/watsoo.jpg" class="mb-3 watssologo"/>
+                    <p class="card-text font">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's content.</p>
+                    <div class="icon" style="display: flex; gap: 20px;">
+                        <i class="fa-brands fa-facebook" style="font-size: 20px;"></i>
+                        <i class="fa-brands fa-square-instagram" style="font-size: 20px;"></i>
+                        <i class="fa-brands fa-square-twitter" style="font-size: 20px;"></i>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-2">
+                    <h5 class="card-title">Solutions</h5>
+                    <div class="arrwoleft" style="display: flex; gap:7px;">
+                        <div>
+                            <i class="fa-solid fa-angles-right"></i>
+                        </div>
+                        <div>
+                            <p class="font">Telematics</p>
+                        </div>
+                    </div>
+                    <div class="arrwoleft" style="display: flex; gap:7px;">
+                        <div>
+                            <i class="fa-solid fa-angles-right"></i>
+                        </div>
+                        <div>
+                            <p class="font">Fuel Sensors</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IoT Devices Section -->
+                <div class="col-12 col-md-6 col-lg-2">
+                    <h5 class="card-title">IoT Devices</h5>
+                    <div class="arrwoleft" style="display: flex; gap:7px;">
+                        <div>
+                            <i class="fa-solid fa-angles-right"></i>
+                        </div>
+                        <div>
+                            <p class="font">Telematics</p>
+                        </div>
+                    </div>
+                    <div class="arrwoleft" style="display: flex; gap:7px;">
+                        <div>
+                            <i class="fa-solid fa-angles-right"></i>
+                        </div>
+                        <div>
+                            <p class="font">Fuel Sensors</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Us Section -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="card-title font">Contact US</h5>
+                    <div style="display: flex; gap:7px;">
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <p class="font">Telematics Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Exercitationem,
+                                dignissimos.</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap:7px;">
+                        <div>
+                            <i class="fa-solid fa-message"></i>
+                        </div>
+                        <div>
+                            <p class="font">Finance Technology</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap:7px;">
+                        <div>
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <p class="font">Finance Technology</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="color: #111;" />
+            <div class="copyrightmain">
+                <div>
+                    <p class="font">@Copyright 2024 Watsoo Express | All Right Reserved</p>
+                </div>
+                <div class="footerprivacy">
+                    <p class="font">Privacy Policy | </p>
+                    <p class="font">Terms & Condition | </p>
+                    <p class="font">Copyright Policy | </p>
+                    <p class="font">Terms & Condion </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer End Section-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="mobilemenu.js"></script>
+    <script src="counter.js"></script>
+    <script src="Slider.js"></script>
+</body>
+
+</html>

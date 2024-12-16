@@ -1,0 +1,58 @@
+.about-watsoo-section-innovative {
+    color: rgb(95, 95, 95);
+    font-weight: 400;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 1.25rem; 
+    background-color: rgb(24, 24, 203);
+    padding: 0.625rem; 
+}
+
+.slick-next:before,
+.slick-prev:before {
+    color: white !important;
+}
+
+.slick-next:before,
+.slick-prev:before {
+    font-family: none !important;
+    border-radius: 100%;
+}
+
+.slick-prev:before {
+    margin-left: -1.5625rem; 
+}
+
+.prev-btn,
+.next-btn {
+    font-size: 1.25rem; 
+    background-color: rgb(24, 24, 203);
+    color: white;
+    padding: 0.625rem;
+    border: none;
+    border-radius: 50%; 
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem; 
+    height: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: rgb(40, 40, 203);
+    transform: scale(1.1); 
+}
+
+
+.prev-btn {
+    margin-left: -1.5625rem; 
+}
+
+.next-btn {
+    margin-right: -1.5625rem;
+}
