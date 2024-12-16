@@ -1598,7 +1598,7 @@ display: inline !important;
 }
 @media (min-width: 240px) and (max-width: 879px) {
     .img-fluid{
-        height: 40vh !important;
+        height: 30vh !important;
     }
 }
 @media (min-width: 880px) and (max-width: 3279px) {
