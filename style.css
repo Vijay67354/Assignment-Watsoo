@@ -103,7 +103,7 @@ body {
 }
 .button:hover {
   background-color: rgb(54, 45, 232);
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .logoright {
@@ -502,7 +502,12 @@ body {
   border: none;
   font-weight: 900;
 }
-
+.buttoncontact:hover{
+  color: white !important;
+}
+.buttoncontact:hover{
+   background-color: rgb(9, 9, 121);
+}
 .buttoncontactsubmit {
   margin-top: 3.125rem;
   background-color: rgb(54, 45, 232);
@@ -838,7 +843,9 @@ img {
   width: 270px;
   font-weight: bold;
 }
-
+.text-overlay:hover{
+  color: white;
+}
 hr:not([size]) {
   height: 0px !important;
 }
